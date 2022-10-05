@@ -1,33 +1,3 @@
-def menu():
-    try:
-        while True:
-            print('Witaj w kalkulatorze jednostek')
-            print('Co chcesz zrobić?')
-            print('1. Zamiana jednostek długości')
-            print('2. Zamiana jednostek objętości ')
-            print('3. Zamiana jednostek masy')
-            print('x. Wyjście')
-            choice=input('Dokonaj wyboru').upper()
-            if choice=='X':
-                print('Do widzenia')
-                break
-            else:
-                choice=int(choice)
-                if choice==1:
-                    high()
-                elif choice==2:
-                    liquid()
-                elif choice==3:
-                    weight()
-                else:
-                    print('Wybrałeś zły znak! Do widzenia')
-                    break
-    except: print('Wybrałeś zły znak! Do widzenia!')
-
-
-
-
-
 def high():
     try:
         while True:
@@ -38,13 +8,14 @@ def high():
             print('4. Zamiana m/mm ')
             print('5. Zamiana m/cm')
             print('6. Zamiana cm/mm')
-            print('x. -wyjście')
-            choice =input('Dokonaj wyboru').upper
+            print('x. -Wyjście')
+            choice =input('Dokonaj wyboru')
+            choice.upper()
             if choice == 'X':
                 print('Do widzenia')
                 break
             else:
-                choice=int(choice)
+                choice = int(choice)
                 if choice == 1:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
                     print(f"{value}mm. to {value / 10} cm")
@@ -133,5 +104,30 @@ def weight():
     except:
         print('Wybrłeś zły znak!')
 
+def menu():
+    try:
+        while True:
+            print('Witaj w kalkulatorze jednostek')
+            print('Co chcesz zrobić?')
+            print('1. Zamiana jednostek długości')
+            print('2. Zamiana jednostek objętości ')
+            print('3. Zamiana jednostek masy')
+            print('x. Wyjście')
+            choice=input('Dokonaj wyboru').upper()
+            if choice=='X':
+                print('Do widzenia')
+                break
+            else:
+                choice=int(choice)
+                if choice==1:
+                    high()
+                elif choice==2:
+                    liquid()
+                elif choice==3:
+                    weight()
+                else:
+                    print('Wybrałeś zły znak! Do widzenia')
+                    break
+    except: print('Wybrałeś zły znak! Do widzenia!')
 
-menu()
+menu() #wywołanie programu
