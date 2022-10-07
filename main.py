@@ -21,19 +21,19 @@ def high():
                     print(f"{value}mm. to {value / 10} cm")
                 elif choice == 2:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}cm. to {value / 100} m")
+                    print(f'{value}cm. to {value / 100} m')
                 elif choice == 3:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}mm. to {value / 1000} m")
+                    print(f'{value}mm. to {value / 1000} m')
                 elif choice == 4:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}m. to {value * 1000} mm")
+                    print(f'{value}m. to {value * 1000} mm')
                 elif choice == 5:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
                     print(f"{value}m. to {value * 100} cm")
                 elif choice == 6:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}cm. to {value * 10} mm")
+                    print(f'{value}cm. to {value * 10} mm')
                 else:
                     print('Wybrałeś zły znak')
     except: print('Wybrłeś zły znak!')
@@ -55,10 +55,10 @@ def liquid():
                 choice = int(choice)
                 if choice == 1:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}ml. to {value / 1000} l")
+                    print(f'{value}ml. to {value / 1000} l')
                 elif choice == 2:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}l. to {value * 1000} ml")
+                    print(f'{value}l. to {value * 1000} ml')
                 else:
                     print('Wybrałeś zły znak')
     except: print('Wybrłeś zły znak!')
@@ -83,22 +83,22 @@ def weight():
                 choice = int(choice)
                 if choice == 1:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}g. to {value / 1000} kg")
+                    print(f'{value}g. to {value / 1000} kg')
                 elif choice == 2:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}kg. to {value / 1000}t")
+                    print(f'{value}kg. to {value / 1000}t')
                 elif choice == 3:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}g. to {value / 100000} t")
+                    print(f'{value}g. to {value / 100000} t')
                 elif choice == 4:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}t. to {value * 1000000} g")
+                    print(f'{value}t. to {value * 1000000} g')
                 elif choice == 5:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
                     print(f"{value}t. to {value * 1000} kg")
                 elif choice == 6:
                     value = float(input('Wpisz wartość jaką chcesz zamienić'))
-                    print(f"{value}kg. to {value * 1000} g")
+                    print(f'{value}kg. to {value * 1000} g')
                 else:
                     print('Wybrałeś zły znak')
     except:
